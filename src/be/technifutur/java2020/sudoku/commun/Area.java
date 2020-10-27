@@ -56,6 +56,23 @@ for (int i=0;i<Math.sqrt(size);i++){
         return type;
     }
 
+// methdoes ajoutées avec code generate method pour la class possibilites
+    public boolean add(int i) {
+        return possibilities.add(i);
+    }
+
+    public boolean remove(int i) {
+        return possibilities.remove(i);
+    }
+
+    public boolean contains(int i) {
+        return possibilities.contains(i);
+    }
+
+    public int size() {
+        return possibilities.size();
+    }
+
     public static void main(String[] args) {
         Area area = new Area(9,AreaType.LINE, new Position(5,1));
         for(Position p : area.positionSet){
