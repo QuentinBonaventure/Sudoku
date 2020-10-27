@@ -1,6 +1,7 @@
 package be.technifutur.java2020.sudoku.commun;
 
 
+import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -49,7 +50,7 @@ for (int i=0;i<Math.sqrt(size);i++){
     }
 
     public Set<Position> getPositionSet(){
-        return positionSet ;
+        return Collections.unmodifiableSet(positionSet) ;
     }
 
     public AreaType getType() {
